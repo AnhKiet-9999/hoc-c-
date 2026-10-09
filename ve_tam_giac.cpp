@@ -2,16 +2,23 @@
 using namespace std;
 
 int main()
-{ 
-    int n;
-    cout << "Nhap so dong cua tam giac: ";
-    cin >> n;
-    for (int dong = 1; dong <= n; dong++)
+{
+    int tong_so_dong = 5;
+
+    for (int dong = 1; dong <= tong_so_dong; dong++)
     {
-        for (int cot = 1; cot <= dong; cot++)
+        // In khoảng trắng
+        for (int so_dau_cach = 1; so_dau_cach <= dong - 1; so_dau_cach++)
         {
-            cout << "* ";
+            cout << " ";
         }
+
+        // In dấu *
+        for (int so_sao = 1; so_sao <= 2 * tong_so_dong - 2 * dong + 1; so_sao++)
+        {
+            cout << "*";
+        }
+
         cout << endl;
     }
 
