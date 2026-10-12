@@ -12,8 +12,10 @@ while (nhap_so != 0)
 {
     cout << "moi nhap cac so nguyen duong de tinh tong: ";
     cin >> nhap_so;
-    if(nhap_so < 0)
-    {
+    while(cin.fail() || nhap_so < 0)
+    {   
+        cin.clear();
+        cin.ignore(1000, '\n');
         cout << "so nhap phai la so nguyen duong, moi nhap lai: " << endl;
         cin >> nhap_so;
     }    
