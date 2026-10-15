@@ -26,7 +26,7 @@ int main()
             cout << "so cot chi tu 1 den 3" << endl;
         }
 
-    } while (cols < 0 || cols < 3);
+    } while (cols < 0 || cols > 3);
 
     //////////////////=======nhap gia tri mang bang ban phim
     cout << "nhap cac gia tri cua mang" << endl;
@@ -118,16 +118,13 @@ int main()
        {
             
             total_sum_rows+= arr[i][j];
-            if (max_sum_rows < total_sum_rows)
+       }
+        if (max_sum_rows < total_sum_rows)
             {
             max_sum_rows = total_sum_rows;
             index_max_sum_rows = i;
            
             }
-          
-          
-       }
-       
      }
     cout << "dong co tong phan tu lon nhat la dong so: " << index_max_sum_rows << " co tong gia tri la: " << max_sum_rows << endl;
      for (int j = 0; j < cols; j++)
@@ -137,14 +134,14 @@ int main()
         {   
             
             total_sum_cols += arr[i][j];
-            if (max_sum_cols < total_sum_cols)
+           
+            
+        }
+         if (max_sum_cols < total_sum_cols)
             {
                 max_sum_cols = total_sum_cols;
                 index_max_sum_cols = j;
             }
-            
-        }
-        
      }
      cout << "cot co tong phan tu lon nhat la cot so: " << index_max_sum_cols << " co tong gia tri la: " << max_sum_cols << endl;
 
