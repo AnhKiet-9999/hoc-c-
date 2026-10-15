@@ -107,10 +107,10 @@ int main()
      //////// tim so dong co tong cac gia tri phan tu lon nhat 
      int max_sum_rows = sum_rows;
      int total_sum_rows = 0;
-     int index_max_sum_rows =0;
-     int total_sum_cols = sum_cols;
-     int max_sum_cols = 0;
-     int index_max_sum_cols = 0;
+     int index_max_sum_rows =so_dong;
+     int total_sum_cols = 0;
+     int max_sum_cols = sum_cols;
+     int index_max_sum_cols = so_cot;
      for ( int i = 0; i < rows; i++)
      {
         total_sum_rows = 0;
